@@ -24,3 +24,10 @@ window.addEventListener("load", () => {
   document.getElementById("content").style.display = "block"; // Show content
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.innerWidth < 1024) {
+    document.body.innerHTML = "<h2 style='text-align:center; color:red; margin-top:20vh;'>This site is best viewed on a laptop or desktop.</h2>";
+  }
+});
+
+
