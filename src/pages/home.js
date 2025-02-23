@@ -1,3 +1,4 @@
+import { footerLoader } from "./footer.js";
 import loadHero from "./hero.js";
 import loadServices from "./services.js";
 import loadTopDishes from "./topDishes.js";

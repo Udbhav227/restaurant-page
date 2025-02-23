@@ -281,3 +281,57 @@ ul {
 .underline:hover:after {
   width: 100%;
 }
+
+/* footer  */
+footer {
+  background-color: rgb(254,234,223);
+  height: fit-content;
+  display: flex;
+  padding-left: 108px;
+  padding-right: 108px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  justify-content: space-between;
+}
+
+.footer-red-font {
+  color: rgb(238, 84, 87);
+  font-family: pluto-bold;
+  font-size: 24px;
+}
+
+.footer>div>ul>li {
+  cursor: pointer;
+  padding: 8px;
+  color: gray;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer>div>ul>li:hover {
+  color: black;
+}
+
+.footer .footer-section {
+  padding: 8px;
+}
+
+.copyright {
+  color: gray;
+}
+
+.company-social-media {
+  margin-top: 63px;
+}
+
+.sosmed-img {
+  height: 32px;
+  width: 32px;
+  opacity: 0.3;
+  margin-left: 8px;
+}
+
+.sosmed-img-container {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+}
