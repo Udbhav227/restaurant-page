@@ -7,8 +7,7 @@ export default function loadHome() {
   content.innerHTML = "";
 
   const heroNode = loadHero();
-  const servicesNode = loadServices();
 
   content.appendChild(heroNode);
-  content.appendChild(servicesNode);  // Append the returned Node from loadServices
+  loadServices();
 }

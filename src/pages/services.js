@@ -1,4 +1,6 @@
 export default function loadServices() {
+  const content = document.getElementById("content");
+
   const servicesDiv = document.createElement("div");
   servicesDiv.classList.add("services-container");
 
@@ -43,5 +45,5 @@ export default function loadServices() {
   });
 
   servicesDiv.appendChild(servicesList);
-  return servicesDiv;
+  content.appendChild(servicesDiv);
 }
