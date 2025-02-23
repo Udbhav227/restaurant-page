@@ -1,4 +1,7 @@
 import './style/joshreset.css';
 import './style/style.css';
+import loadHero from "./pages/loadHero.js";  
 
-console.log('working')
+document.addEventListener("DOMContentLoaded", () => {
+  loadHero();  
+});
