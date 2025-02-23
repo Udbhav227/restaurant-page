@@ -18,3 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("home-btn").addEventListener("click", () => switchTab(loadHome));
   document.getElementById("services-btn").addEventListener("click", () => switchTab(loadServices));
 });
+
+window.addEventListener("load", () => {
+  document.getElementById("preloader").style.display = "none"; // Hide loader
+  document.getElementById("content").style.display = "block"; // Show content
+});
+
