@@ -1,8 +1,8 @@
-import heroImgSrc from "../images/burger.png"; 
-import mascotImgSrc from "../images/mascot.png"; 
+import heroImgSrc from "../images/burger.png";
+import mascotImgSrc from "../images/mascot.png";
 
 export default function loadHero() {
-  const content = document.getElementById("content");
+  const main = document.createElement("main");
 
   const hero = document.createElement("div");
   hero.classList.add("hero");
@@ -52,11 +52,12 @@ export default function loadHero() {
   const heroImage = new Image();
   heroImage.src = heroImgSrc;
   heroImage.alt = "Delicious Burger";
-  heroImage.loading = "lazy";  
+  heroImage.loading = "lazy";
 
   heroImageContainer.appendChild(heroImage);
   heroRight.appendChild(heroImageContainer);
 
   hero.append(heroLeft, heroRight);
-  content.appendChild(hero);
+  main.append(hero);
+  return main;
 }

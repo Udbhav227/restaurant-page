@@ -2,6 +2,7 @@
   font-family: pluto-bold;
   src: url('../fonts/pluto-font-family/HvDTrial_Pluto-CondBlack-BF6486959ed9374.otf');
 }
+
 @font-face {
   font-family: pluto-light;
   src: url('../fonts/pluto-font-family/HvDTrial_Pluto-CondRegular-BF6486959e6db70.otf');
@@ -17,6 +18,13 @@ body {
   flex-direction: column;
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: fit-content; */
+}
+
 /* Header  Section*/
 .restro-name {
   font-family: pluto-bold, sans-serif;
@@ -24,7 +32,7 @@ body {
 }
 
 nav {
-  background-color: rgba(255, 240, 233, 1);
+  background-color: rgb(255, 240, 233);
   font-size: 20px;
   display: flex;
   justify-content: space-between;
@@ -35,9 +43,9 @@ nav {
 nav button {
   font-family: pluto-light, sans-serif;
   padding: 8px;
-  background-color: rgba(255, 240, 233, 1);
+  background-color: rgb(255, 240, 233);
   cursor: pointer;
-}   
+}
 
 
 .nav-center {
@@ -47,18 +55,19 @@ nav button {
   gap: 24px;
 }
 
-.nav-center button{
+.nav-center button {
   border: none;
 }
 
-.order-now, .reserve-now {
+.order-now,
+.reserve-now {
   padding-left: 24px;
   padding-right: 24px;
   border: solid rgb(238, 84, 87) 2px;
   border-radius: 24px;
   font-size: 16px;
   font-weight: bold;
-  color: rgba(238, 84, 87, 1);
+  color: rgb(238, 84, 87);
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -67,15 +76,19 @@ nav button {
 }
 
 /* Hero Section  */
+main {
+  height: 100vh;
+  background-color: rgb(255, 240, 233);
+}
 
 .hero {
   font-family: pluto-light, sans-serif;
-  background-color: rgba(255, 240, 233, 1);
+  background-color: rgb(255, 240, 233);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0 110px;
-  height: 92vh;
+  height: 90%;
 }
 
 .hero-left {
@@ -86,7 +99,7 @@ nav button {
 }
 
 .tagline {
-  color: rgba(238, 84, 87, 1);
+  color: rgb(238, 84, 87);
   font-family: pluto-bold;
   font-size: 60px;
 }
@@ -100,8 +113,8 @@ nav button {
   font-size: 20px;
   color: white;
   padding: 12px 24px;
-  background-color: rgba(238, 84, 87, 1);
-  border: 1px solid rgba(238, 84, 87, 1);
+  background-color: rgb(238, 84, 87);
+  border: 1px solid rgb(238, 84, 87);
 }
 
 .mascot-container {
@@ -109,11 +122,11 @@ nav button {
   align-items: center;
 }
 
-.mascot-img-container img{
-  width: 90px; 
-  height: 85px;  
+.mascot-img-container img {
+  width: 90px;
+  height: 85px;
   display: block;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .mascot-text {
@@ -125,22 +138,61 @@ nav button {
   align-items: center;
 }
 
-.hero-image-container img{
+.hero-image-container img {
   width: 100%;
   max-width: 1500px;
-  height: auto; /* Keeps aspect ratio */
+  height: auto;
   display: block;
 }
 
+/* Services */
+.services-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+  background-color: rgb(255, 240, 233);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.info-container {
+  background-color: white;
+  width: 70%;
+  padding: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 70px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: translateY(50%);
+}
+
+.info-title {
+  font-family: pluto-bold;
+  font-size: 30px;
+  display: flex;
+  width: fit-content;
+}
+
+.info-subtitle {
+  font-family: pluto-light;
+  color: rgb(156, 89, 89);
+  font-size: large;
+  padding: 12px;
+  max-width: 300px;
+}
+
 /* Animations */
-.order-now:hover, .reserve-now:hover {
+.order-now:hover,
+.reserve-now:hover {
   color: white;
-  background-color: rgba(238, 84, 87, 1);
+  background-color: rgb(238, 84, 87);
   box-shadow: 0 0 10px rgba(238, 84, 87, 0.6);
 }
 
-.cta-buttons > button:hover {
-  color: rgba(238, 84, 87, 1);
+.cta-buttons>button:hover {
+  color: rgb(238, 84, 87);
   background-color: white;
 }
 
@@ -153,10 +205,9 @@ nav button {
 }
 
 .underline:after {
-  /* Creates an empty pseudo-element for styling purposes */
   content: '';
   position: absolute;
-  background-color: rgba(238, 84, 87, 1);
+  background-color: rgb(238, 84, 87);
   height: 3px;
   width: 0;
   left: 0;
@@ -167,4 +218,3 @@ nav button {
 .underline:hover:after {
   width: 100%;
 }
-
