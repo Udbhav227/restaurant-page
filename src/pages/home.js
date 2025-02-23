@@ -1,5 +1,6 @@
 import loadHero from "./hero.js";
 import loadServices from "./services.js";
+import loadTopDishes from "./topDishes.js";
 
 export default function loadHome() {
   const content = document.getElementById("content");
@@ -10,4 +11,5 @@ export default function loadHome() {
 
   content.appendChild(heroNode);
   loadServices();
+  loadTopDishes();
 }

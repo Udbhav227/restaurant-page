@@ -22,7 +22,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* height: fit-content; */
 }
 
 /* Header  Section*/
@@ -181,6 +180,70 @@ ul {
   font-size: large;
   padding: 12px;
   max-width: 300px;
+}
+
+/* Top Dishes */
+.top-dishes-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 110px;
+}
+
+.top-dishes-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dishes-heading {
+  font-family: pluto-bold, sans-serif;
+  font-size: 40px;
+  padding-left: 22px;
+}
+
+.dishes-subtext {
+  font-size: 16px;
+  font-family: pluto-light;
+  color: gray;
+  width: 300px;
+}
+
+.dishes-container {
+  margin: 50px 0 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.dish-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 350px;
+  text-align: center;
+}
+
+.dish-card img {
+  height: 350px;
+  object-fit: contain;
+}
+
+.dish-card .dish-name {
+  font-family: pluto-light, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 24px;
+}
+
+.dish-card .order-link {
+  color: rgb(238, 84, 87);
+  font-size: 18px; 
+  font-family: pluto-light, sans-serif;
+  cursor: pointer;
+}
+
+.primary-color {
+  color: rgb(238, 84, 87);
 }
 
 /* Animations */
