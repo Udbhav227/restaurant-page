@@ -52,7 +52,6 @@ export default function loadHero() {
   const heroImage = new Image();
   heroImage.src = heroImgSrc;
   heroImage.alt = "Delicious Burger";
-  heroImage.loading = "lazy";
 
   heroImageContainer.appendChild(heroImage);
   heroRight.appendChild(heroImageContainer);

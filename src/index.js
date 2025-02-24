@@ -3,6 +3,7 @@ import './style/style.css';
 import loadHome from "./pages/home.js";
 import loadServices from './pages/services.js';
 import { footerLoader } from './pages/footer.js';
+import loadMenu from './pages/menu.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   const content = document.getElementById("content");
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("home-btn").addEventListener("click", () => switchTab(loadHome));
   document.getElementById("services-btn").addEventListener("click", () => switchTab(loadServices));
+  document.getElementById("menu-btn").addEventListener("click", () => switchTab(loadMenu));
 });
 
 window.addEventListener("load", () => {

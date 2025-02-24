@@ -183,24 +183,29 @@ ul {
 }
 
 /* Top Dishes */
-.top-dishes-container {
+.top-dishes-container, .menu-container {
   display: flex;
   flex-direction: column;
   padding: 0 110px;
 }
 
-.top-dishes-header {
+.top-dishes-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.top-dishes-header, .menu-header {
   display: flex;
   justify-content: space-between;
 }
 
-.dishes-heading {
+.dishes-heading, .menu-heading {
   font-family: pluto-bold, sans-serif;
   font-size: 40px;
   padding-left: 22px;
 }
 
-.dishes-subtext {
+.dishes-subtext, .menu-subtext {
   font-size: 16px;
   font-family: pluto-light;
   color: gray;
@@ -221,10 +226,13 @@ ul {
   overflow: hidden;
   width: 350px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .dish-card img {
-  height: 350px;
+  height: 300px;
   object-fit: contain;
 }
 
@@ -347,6 +355,76 @@ h2 {
 
 .underline:hover:after {
   width: 100%;
+}
+
+/* Menu  */
+.menu-item-container {
+  padding: 110px 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+
+.menu-item {
+  padding: 24px;
+  background-color: rgba(254, 234, 223);
+  border-radius: 12px;
+  border-top-left-radius: 40%;
+  position: relative;
+}
+
+.item-image {
+  width: 300px;
+  height: 150px;
+}
+
+.item-image img {
+  width: 285px;
+  height: 285px;
+  object-fit: cover; 
+  border: solid rgb(238, 84, 87) 5px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-25%) translateX(25%);
+}
+
+.item-name {
+  font-family: pluto-bold, sans-serif;
+  font-size: 24px;
+  width: 200  px;
+}
+
+.item-rating {
+  font-family: 'Times New Roman', Times, serif;
+  color: grey;
+  padding: 8px 0;
+}
+
+.item-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-family: pluto-light, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  margin-left: 4px;
+}
+
+.buy-now-btn {
+  border: solid rgb(238, 84, 87) 2px;
+  border-radius: 24px;
+  padding: 8px 12px;
+  font-family: pluto-light;
+  font-size: medium;
+  color: white;
+  background-color: rgb(238, 84, 87);
+  cursor: pointer;
 }
 
 /* footer  */
