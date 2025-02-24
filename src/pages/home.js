@@ -1,6 +1,7 @@
 import { footerLoader } from "./footer.js";
 import loadHero from "./hero.js";
 import loadServices from "./services.js";
+import { loadTestimonials } from "./testimonials.js";
 import loadTopDishes from "./topDishes.js";
 
 export default function loadHome() {
@@ -13,4 +14,5 @@ export default function loadHome() {
   content.appendChild(heroNode);
   loadServices();
   loadTopDishes();
+  loadTestimonials();
 }
