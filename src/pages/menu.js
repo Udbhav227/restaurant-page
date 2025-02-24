@@ -30,9 +30,9 @@ export default function loadMenu() {
       { name: "Paneer <br> Tikka Masala", price: 450, rating: "⭐⭐⭐⭐⭐ 3,892", image: paneerTikka },
       { name: "Aromatic <br> Veg Biryani", price: 465, rating: "⭐⭐⭐⭐⭐ 4,128", image: vegBiryani },
       
-      { name: "vegetable <br> Lasagne", price: 465, rating: "⭐⭐⭐⭐⭐ 1,330", image: lasagne },
+      { name: "Vegetable <br> Lasagne", price: 465, rating: "⭐⭐⭐⭐⭐ 1,330", image: lasagne },
       { name: "Chicken <br> Tikka Pizza", price: 450, rating: "⭐⭐⭐⭐⭐ 1,484", image: pizza },
-      { name: "vegetable <br> Rice Alfredo", price: 465, rating: "⭐⭐⭐⭐⭐ 1,818", image: alfredo },
+      { name: "Vegetable <br> Rice Alfredo", price: 465, rating: "⭐⭐⭐⭐⭐ 1,818", image: alfredo },
 
       { name: "Turkish <br> Pistachio Kadayif", price: 450, rating: "⭐⭐⭐⭐⭐ 1,147", image: kadayif},
       { name: "Baked <br> Meringue Pavlova", price: 400, rating: "⭐⭐⭐⭐⭐ 1,476", image: strawberryCake},
