@@ -5,7 +5,7 @@ export function loadTestimonials() {
 
   testimonialsSection.innerHTML = `
       <div class="container">
-          <h2>What Our Esteemed Chefs Say</h2>
+          <h2>What Our <span class="primary-color">Esteemed Chefs</span> Say</h2>
           <div class="testimonials-grid">
               <div class="testimonial">
                   <div class="quote">❝</div>

@@ -1,4 +1,4 @@
-import chrickenBiryani from '../images/food/chicken-biryani.png';
+import chrickenBiryani from '../images/food/Adobe Express - file.png';
 import southIndian from '../images/food/south-indian-thali.png';
 import tandooriChicken from '../images/food/tandoori-chicken.png';  
 
@@ -32,8 +32,8 @@ export default function loadTopDishes() {
     dishesContainer.classList.add("dishes-container");
 
     const dishes = [
-        { img: southIndian, name: "South Indian Thali" },
         { img: chrickenBiryani, name: "Chicken Biryani" },
+        { img: southIndian, name: "South Indian Thali" },
         { img: tandooriChicken, name: "Tandoori Chicken" },
     ];
 
